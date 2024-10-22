@@ -1,0 +1,28 @@
+﻿<Window x:Class="NHLBoardsAdsBlocker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NHLBoardsAdsBlocker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="960" ScrollViewer.VerticalScrollBarVisibility="Disabled" AllowsTransparency="True" 
+        WindowStyle="None" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Height="24">
+                <!--<Label Name="RefreshTimingInMs" />-->
+                <Label Name="LogRawFramesBuffer" Foreground="Red" />
+                <!--<Label Name="LogProcessedFramesThreads" Foreground="Green" />-->
+                <Label Name="LogCensoredFramesBuffer" Foreground="Green" />
+                <Label Name="LogProcessedFramesBuffer" Foreground="Blue" />
+                <!--<Label Name="LogOutputFPS" Foreground="Brown" />-->
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="7 -17 0 0">
+                <Image Name="PreCuredImage" Height="auto" Width="auto" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
